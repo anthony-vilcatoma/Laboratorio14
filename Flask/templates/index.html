@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    
+    <div class="flex flex-col w-6/12 mx-auto bg-blue-200 p-8 rounded-xl mt-16">
+        <h1 class="text-blue-600 text-xl">Calculadora</h1>
+        <form action="/" method="POST" class="flex flex-col mt-5">
+            <div class="flex mb-5">
+                <label>Numero 1:</label>
+                <input type="number" name="num1" placeholder="Número 1">
+
+            </div>
+            <div class="flex mb-5">
+                <label>Numero 1:</label>
+                <input type="number" name="num2" placeholder="Número 2">
+            </div>
+            <div class="flex mb-5">
+                <select name="operacion" class="w-2/12">
+                    <option value="sumar">Sumar</option>
+                    <option value="restar">Restar</option>
+                    <option value="multiplicar">Multiplicar</option>
+                    <option value="dividir">Dividir</option>
+                </select>
+                <button type="submit" class="w-2/12 p-1  ml-2  rounded-md bg-green-100">Calcular</button>
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
